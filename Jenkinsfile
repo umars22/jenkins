@@ -13,12 +13,5 @@ pipeline {
                 }
             }
         }
-        stage('execute script') {
-          steps{
-              script {
-                  sh "./jenkins/script.sh"
-              }
-          }
-        }
     }
 }
