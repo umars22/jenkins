@@ -3,7 +3,7 @@ pipeline {
 
     parameters {
         string(defaultValue: "https://github.com/umars22/jenkins.git", description: "Enter the name", name: "Git")
-        string(defaultValue: "cloned_repo", description: "Enter the directory name", name: "Directory")
+        string(defaultValue: "/var/lib/jenkins/workspace/pipeline-test/jenkins/", description: "Enter the directory name", name: "Directory")
 
     }
 
