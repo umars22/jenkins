@@ -27,6 +27,7 @@ pipeline {
         stage('Execute script.sh') {
             steps {
                 script {
+                    sh "chmod +x ${params.Directory}/script.sh" 
                     sh "./jenkins/script.sh"  // Replace 'cloned_repo' with the actual directory name
                 }
             }
