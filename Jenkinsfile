@@ -9,7 +9,7 @@ pipeline {
         stage('bruh') {
             steps {
                 script {
-                    sh "git clone ${params.Git}"
+                    sh " echo  ${params.Git}"
                 }
             }
         }
