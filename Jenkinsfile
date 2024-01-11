@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     parameters {
-        string(defaultValue: "enter Git repo link here", description: "Enter the name", name: "Git")
+        string(defaultValue: "https://github.com/umars22/jenkins.git", description: "Enter the name", name: "Git")
         string(defaultValue: "cloned_repo", description: "Enter the directory name", name: "Directory")
 
     }
