@@ -28,6 +28,7 @@ pipeline {
             steps {
                 script {
                     sh "chmod +x ${params.Directory}script.sh" 
+                    sh "${params.Directory}script.sh"
                 }
             }
         }
