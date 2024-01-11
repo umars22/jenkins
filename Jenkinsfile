@@ -1,13 +1,17 @@
 pipeline {
-  agent{
-  }
-  parameters{
-      string(defaultValue: "git-link", description: "enter the name", name: "deploymentName")
-  }
-  stages{
-    stage('bruh ')
-      steps{
-        sh 'git clone ${params.git}'
-      }
-   }
+    agent any
+
+    parameters {
+        string(defaultValue: "enter git repo link here", description: "Enter the name", name: "Git")
+    }
+
+    stages {
+        stage('bruh') {
+            steps {
+                script {
+                    sh "git clone ${params.Git}"
+                }
+            }
+        }
+    }
 }
